@@ -1,12 +1,8 @@
 require("dotenv").config();
 
 const { Client } = require("@notionhq/client");
-// Notion Clientの設定
 const notion = new Client({ auth: process.env.notion_token });
 const databaseId = process.env.notion_db;
-
-// console.log("Notion Token:", process.env.notion_token);
-// console.log("Database ID:", process.env.notion_db);
 
 exports.postFormService = async (req) => {
   try {

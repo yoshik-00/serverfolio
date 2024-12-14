@@ -1,7 +1,6 @@
 require("dotenv").config();
 
 const { Client } = require("@notionhq/client");
-// Notion Clientの設定
 const notion = new Client({ auth: process.env.notion_token });
 const databaseId = process.env.notion_db_task;
 
@@ -22,7 +21,6 @@ exports.postPrimaryTasksService = async () => {
         },
       ],
     });
-    console.log(response);
     return response;
   } catch (error) {
     console.error("Error querying Notion database:", error.message);
@@ -40,7 +38,6 @@ exports.postTasksService = async () => {
         },
       ],
     });
-    console.log(response);
     return response;
   } catch (error) {
     console.error("Error querying Notion database:", error.message);

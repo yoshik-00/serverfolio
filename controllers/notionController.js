@@ -7,7 +7,6 @@ exports.postForm = async (req, res) => {
       console.log("リクエストボディがありません");
       return res.status(400).json({ message: "リクエストボディがありません" });
     }
-    // Notionデータベースに新しいページを作成
     const formResponse = await notionFormService.postFormService(req);
     console.log(formResponse);
     res.status(200).json({ message: "データが正常に送信されました" });
