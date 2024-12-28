@@ -5,13 +5,13 @@ const notionRoutes = require("./routes/notionRoutes");
 
 const app = express();
 
-app.use((req, res, next) => {
-  console.log(
-    `Request Method: ${req.method}, Request URL: ${req.url}, Body:`,
-    req.body
-  );
-  next();
-});
+// app.use((req, res, next) => {
+//   console.log(
+//     `Request Method: ${req.method}, Request URL: ${req.url}, Body:`,
+//     req.body
+//   );
+//   next();
+// });
 
 app.use(bodyParser.json());
 app.use(cors());

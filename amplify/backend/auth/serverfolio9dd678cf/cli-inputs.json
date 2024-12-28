@@ -1,10 +1,10 @@
 {
   "version": "1",
   "cognitoConfig": {
-    "identityPoolName": "serverfolio7b20de94_identitypool_7b20de94",
+    "identityPoolName": "serverfolio9dd678cf_identitypool_9dd678cf",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "server7b20de94",
-    "userPoolName": "serverfolio7b20de94_userpool_7b20de94",
+    "resourceNameTruncated": "server9dd678cf",
+    "userPoolName": "serverfolio9dd678cf_userpool_9dd678cf",
     "autoVerifiedAttributes": [
       "email"
     ],
@@ -31,17 +31,17 @@
     "userpoolClientReadAttributes": [
       "email"
     ],
-    "userpoolClientLambdaRole": "server7b20de94_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "server9dd678cf_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "7b20de94",
-    "resourceName": "serverfolio7b20de94",
+    "sharedId": "9dd678cf",
+    "resourceName": "serverfolio9dd678cf",
     "authSelections": "identityPoolAndUserPool",
     "useDefault": "defaultSocial",
     "hostedUI": true,
-    "hostedUIDomainName": "serverfolio7b20de94-7b20de94",
+    "hostedUIDomainName": "serverfolio9dd678cf-9dd678cf",
     "authProvidersUserPool": [],
     "hostedUIProviderMeta": "[]",
-    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:8080/\"],\"LogoutURLs\":[\"http://localhost:8080/\"]}",
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:5173/\"],\"LogoutURLs\":[\"http://localhost:5173/\"]}",
     "userPoolGroupList": [],
     "serviceName": "Cognito",
     "usernameCaseSensitive": false,
