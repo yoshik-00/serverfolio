@@ -23,7 +23,7 @@ exports.postPrimaryTasksService = async () => {
     });
     return response;
   } catch (error) {
-    console.error("Error querying Notion database:", error.message);
+    console.error("クエリに問題があります。:", error.message);
   }
 };
 
@@ -40,6 +40,6 @@ exports.postTasksService = async () => {
     });
     return response;
   } catch (error) {
-    console.error("Error querying Notion database:", error.message);
+    console.error("クエリに問題があります。:", error.message);
   }
 };

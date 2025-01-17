@@ -5,16 +5,15 @@ const notionRoutes = require("./routes/notionRoutes");
 
 const app = express();
 
-// app.use((req, res, next) => {
-//   console.log(
-//     `Request Method: ${req.method}, Request URL: ${req.url}, Body:`,
-//     req.body
-//   );
-//   next();
-// });
-
 app.use(bodyParser.json());
-app.use(cors());
+app.use(
+  cors({
+    // origin: "https://n-yoshikawa.work:443",
+    origin: "http://localhost:5173",
+    credentials: true,
+    optionsSuccessStatus: 200,
+  })
+);
 app.use(express.json());
 app.use("/notion", notionRoutes);
 

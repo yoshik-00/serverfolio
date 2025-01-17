@@ -2,7 +2,7 @@ require("dotenv").config();
 
 const { Client } = require("@notionhq/client");
 const notion = new Client({ auth: process.env.notion_token });
-const databaseId = process.env.notion_db;
+const databaseId = process.env.notion_db_form;
 
 exports.postFormService = async (req) => {
   try {
@@ -10,7 +10,7 @@ exports.postFormService = async (req) => {
     await notion.pages.create({
       parent: {
         type: "database_id",
-        database_id: "e1a5c0c2c5aa4cc885d2676c05269924",
+        database_id: databaseId,
       },
       properties: {
         Phone: {
@@ -61,6 +61,6 @@ exports.postFormService = async (req) => {
       },
     });
   } catch (error) {
-    console.error("Error querying Notion database:", error.message);
+    console.error("クエリに問題があります。:", error.message);
   }
 };
