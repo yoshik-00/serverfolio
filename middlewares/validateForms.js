@@ -55,7 +55,6 @@ const validateForms = (req, res, next) => {
       }
     }
 
-    // サニタイズ
     const sanitize = (input) => {
       if (!input) return input;
       return String(input)

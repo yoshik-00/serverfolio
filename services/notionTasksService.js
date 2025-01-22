@@ -1,4 +1,7 @@
-require("dotenv").config();
+//environment variable
+const dotenv = require("dotenv");
+const env = process.env.NODE_ENV || "development";
+dotenv.config({ path: `.env.${env}` });
 
 const { Client } = require("@notionhq/client");
 const notion = new Client({ auth: process.env.notion_token });
