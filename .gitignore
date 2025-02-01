@@ -31,3 +31,5 @@ amplifytools.xcconfig
 #redis
 dump.rdb
 
+#dist
+.dist.tar
