@@ -13,7 +13,6 @@ exports.postPrimaryTasksService = async () => {
     const cacheKey = `${redisService.CACHE_KEY_PREFIX.PRIMARY_TASKS}${databaseId}`;
     const cachedData = await redisService.getCache(cacheKey);
     if (cachedData) {
-      console.log("キャッシュからプライマリタスクを取得しました");
       return cachedData;
     }
     const response = await notion.databases.query({
@@ -44,7 +43,6 @@ exports.postTasksService = async () => {
     const cacheKey = `${redisService.CACHE_KEY_PREFIX.ALL_TASKS}${databaseId}`;
     const cachedData = await redisService.getCache(cacheKey);
     if (cachedData) {
-      console.log("キャッシュからタスクを取得しました");
       return cachedData;
     }
     const response = await notion.databases.query({
@@ -73,8 +71,6 @@ exports.invalidateTasksCache = async () => {
       redisService.deleteCache(primaryTasksKey),
       redisService.deleteCache(allTasksKey),
     ]);
-
-    console.log("タスクのキャッシュを削除しました");
   } catch (error) {
     console.error("キャッシュの削除に失敗しました:", error);
   }

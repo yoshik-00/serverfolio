@@ -1,4 +1,3 @@
-// services/redisService.js
 const Redis = require("ioredis");
 const dotenv = require("dotenv");
 const env = process.env.NODE_ENV || "development";
@@ -19,7 +18,7 @@ exports.getCache = async (key) => {
     const cachedData = await redis.get(key);
     return cachedData ? JSON.parse(cachedData) : null;
   } catch (error) {
-    console.error("Redisからの読み込みエラー:", error);
+    console.error("Redis読み込みエラー:", error);
     return null;
   }
 };
@@ -27,14 +26,14 @@ exports.setCache = async (key, data) => {
   try {
     await redis.set(key, JSON.stringify(data), "EX", CACHE_TTL);
   } catch (error) {
-    console.error("Redisへの書き込みエラー:", error);
+    console.error("Redis書き込みエラー:", error);
   }
 };
 exports.deleteCache = async (key) => {
   try {
     await redis.del(key);
   } catch (error) {
-    console.error("Redisからの削除エラー:", error);
+    console.error("Redis削除エラー:", error);
   }
 };
 
