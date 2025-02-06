@@ -24,6 +24,11 @@ app.use("/notion", notionRoutes);
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
+  if (process.env.NODE_ENV === "production") {
+    console.log("Running in production mode");
+  } else {
+    console.log("Running in development mode");
+  }
 });
 
 module.exports = app;

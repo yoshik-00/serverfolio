@@ -33,3 +33,9 @@ dump.rdb
 
 #dist
 .dist.tar
+
+#docker
+docker-compose.yml
+
+#pm2
+ecosystem.config.js
