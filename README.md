@@ -36,7 +36,7 @@
   - ##### serverfolio
 
     <img src="https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
-    nodemon<img src="" />
+    <img src="https://img.shields.io/badge/nodemon%20-76D04B?style=for-the-badge&logo=nodemon&logoColor=white" />
 
     ###### routes
 
@@ -46,17 +46,16 @@
 
       <img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white" />
       <img src="https://img.shields.io/badge/redis-%23DD0031.svg?&style=for-the-badge&logo=redis&logoColor=white" />
-      googlelibphonenumber<img src="" />
+      <img src="https://img.shields.io/badge/google_libphonenumber-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" />
 
     ###### services
 
       <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white" />
-      restapi<img src="" />
 
 - ### 導入
   > ```
   > git clone https://github.com/yoshik-00/reactfolio.git
-  > 
+  >
   > npm install
   >
   > npm run dev
