@@ -18,15 +18,15 @@
 
 - ### 要件
   上記の目的を考慮し今回作成するアプリケーションの要件を以下に記載する。
-  ・汎用性が高くモダンな以下の技術スタックを採用する。
-  　・react
-  　・tailwindcss
-  　・node.js
-  　・RESTAPI
-  　・docker
-  ・notion の DB 機能を使用した to-do アプリを利用する。
-  ・認証機能を実装しセキュリティを堅牢にする。
-  ・フォーム機能を実装する。
+  - 汎用性が高くモダンな以下の技術スタックを採用する。
+    - react
+    - tailwindcss
+    - node.js
+    - RESTAPI
+    - docker
+  - notion の DB 機能を使用した to-do アプリを利用する。
+  - 認証機能を実装しセキュリティを堅牢にする。
+  - フォーム機能を実装する。
 - ### 実装
 
   ##### システムアーキテクチャ図
@@ -36,6 +36,7 @@
   - ##### serverfolio
 
     <img src="https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
+    nodemon<img src="" />
 
     ###### routes
 
@@ -55,7 +56,10 @@
 - ### 導入
   > ```
   > git clone https://github.com/yoshik-00/reactfolio.git
+  > 
   > npm install
+  >
+  > npm run dev
   > ```
 
 ---
